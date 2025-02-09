@@ -8,6 +8,15 @@ const Card = ({ title, image}) => {
     if (title == 'GITHUB') {
       window.open('https://github.com/vivekkushwaha373', '_blank');
     }
+    if (title == 'AutoInterv') {
+      window.open('https://autointerv.vercel.app/', '_blank');
+    }
+    if (title == 'BondSphere') {
+      window.open('https://ghost-notes-tau.vercel.app/', '_blank');
+    }
+    if (title == 'GhostNotes') {
+      window.open('https://ghost-notes-tau.vercel.app/', '_blank');
+    }
     if (title == 'Ecommerce') {
       window.open('https://ec0mmfrontend.netlify.app/', '_blank');
     }

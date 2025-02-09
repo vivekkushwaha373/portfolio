@@ -8,30 +8,6 @@ const Card = ({ title, image}) => {
     if (title == 'GITHUB') {
       window.open('https://github.com/vivekkushwaha373', '_blank');
     }
-    if (title == 'Ecommerce') {
-      window.open('https://ec0mmfrontend.netlify.app/', '_blank');
-    }
-    if (title == 'NoteSaver') {
-      window.open('https://notesav.netlify.app/', '_blank');
-    }
-    if (title == 'Password Generator') {
-      window.open('https://passwogen.netlify.app/', '_blank');
-    }
-    if (title == 'Tic Tac Toe') {
-      window.open('https://tic-tac0.netlify.app/', '_blank');
-    }
-    if(title == 'Rock Paper Scissor'){
-      window.open('https://rpaperscissor.netlify.app/', '_blank');
-    }      
-    if(title == 'StudySync'){
-      window.open('https://studysyc.netlify.app/', '_blank');
-    }
-    if (title == 'Cards') {
-      window.open('https://courscard.netlify.app/', '_blank');
-    }
-    if (title == 'AmazonBasic Css') {
-      window.open('https://amz0n1.netlify.app/', '_blank');
-    }
   }
 
   return (
