@@ -38,7 +38,9 @@
 
     100% {
         transform: translateX(-(.slider.scrollWidth - .slider.clientWidth));
-        /* Adjust depending on card width */
+        Adjust depending on card width 
     }
 }
+
+*/
 
