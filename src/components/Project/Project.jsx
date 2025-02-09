@@ -7,6 +7,15 @@ import { ScrollTrigger } from 'gsap/all'
 import aiinterv from '../../assets/AIinterv.png'
 import ghostnotes from '../../assets/GhostNotes.png'
 import bondsphere from '../../assets/BondSphere.png'
+import coursecards from '../../assets/coursecards.png'
+import ecommerse from '../../assets/ecommerse.png'
+import notesaver from '../../assets/notesaver.png'
+import password from '../../assets/password.png'
+import rockpaperscissor from '../../assets/roackpaperscissor.png'
+import studysync from '../../assets/studysync.png'
+import testimonial from '../../assets/testimonial.png'
+import tictactoe from '../../assets/tictactoe.png'
+import amazon from '../../assets/amazon.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -45,15 +54,15 @@ const Project = () => {
           <div className='slider'>
               
           
-          <Card title='Testimonials'></Card>
-          <Card title='Ecommerce'></Card>
-          <Card title='NoteSaver'></Card>
-          <Card title='Password Generator'></Card>
-          <Card title='Tic Tac Toe'></Card>
-          <Card title='Rock Paper Scissor'></Card>
-          <Card title='StudySync'></Card>
-          <Card title='Cards'></Card>
-          <Card title='AmazonBasic Css'></Card>
+          <Card image={testimonial} title='Testimonials'></Card>
+          <Card image={ecommerse} title='Ecommerce'></Card>
+          <Card image={notesaver} title='NoteSaver'></Card>
+          <Card image={password} title='Password Generator'></Card>
+          <Card image={tictactoe} title='Tic Tac Toe'></Card>
+          <Card image={rockpaperscissor} title='Rock Paper Scissor'></Card>
+          <Card image={studysync} title='StudySync'></Card>
+          <Card image={coursecards} title='Cards'></Card>
+          <Card image={amazon} title='AmazonBasic Css'></Card>
           
           </div>
 

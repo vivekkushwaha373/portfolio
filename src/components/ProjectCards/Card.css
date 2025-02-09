@@ -51,3 +51,10 @@
     box-shadow:2px 2px 10px rgba(7, 211, 238, 0.988),
         2px 2px 10px rgb(12, 214, 250); ;
 }
+
+@media (max-width:500px) {
+    .hoverprojectcard{
+        transform: translateY(0%);
+    }
+
+}

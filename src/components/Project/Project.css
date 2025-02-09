@@ -15,8 +15,8 @@
     height: 300px;
     display: flex;
     align-items: center;
-    overflow-x: scroll;
-    justify-content: center;
+    overflow-x: auto;
+    justify-content: flex-start;
     gap: 30px;
     scrollbar-width: none;
     /* animation: scroll 5s linear infinite alternate; */
