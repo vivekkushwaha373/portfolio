@@ -2,7 +2,7 @@ import React from 'react'
 import './About.css'
 import Card from '../Card/Card'
 import mern from '../../assets/mern.png'
-import dsa from '../../assets/dsa.png'
+import linkedin from '../../assets/linkedin.png'
 import git from '../../assets/git.png'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
@@ -129,8 +129,8 @@ const About = () => {
                 </div>
             </div>
             <div className="rightabout">
-                <Card title='MERN STACK WEB DEVELOPER' image={mern}></Card>
-                <Card title='DSA' image={dsa}></Card>
+                <Card title='MERN STACK|NEXT DEVELOPER' image={mern}></Card>
+                <Card title='Linkedin' image={linkedin}></Card>
                
                 <Card title='GITHUB' image={git}></Card>
             </div>

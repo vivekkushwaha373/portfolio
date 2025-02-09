@@ -5,8 +5,11 @@ import mern from '../../assets/mern.png'
 const Card = ({ title, image}) => {
   
   const redirect = () => {
-    if (title == 'GITHUB') {
+    if (title == 'GITHUB' || title =='MERN STACK|NEXT DEVELOPER') {
       window.open('https://github.com/vivekkushwaha373', '_blank');
+    }
+    if (title == 'Linkedin') {
+      window.open('https://www.linkedin.com/in/vivekushwaha/', '_blank');
     }
   }
 
