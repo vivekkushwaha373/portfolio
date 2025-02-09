@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../Card/Card'
+import Card from '../ProjectCards/Card'
 import './Project.css'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
