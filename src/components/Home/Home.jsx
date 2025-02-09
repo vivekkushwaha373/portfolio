@@ -4,6 +4,7 @@ import man from '../../assets/man.png'
 import TypingEffect from 'react-typing-effect'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import { Link } from 'react-scroll'
 
 
 
@@ -51,7 +52,8 @@ const Home = () => {
                           </TypingEffect>
                           
                       </div>
-                          <button>HIRE ME</button>
+                      <Link to='contact' spy={true} smooth={true} duration={500}><button>HIRE ME</button></Link>
+                          
                   </div>
               </div>
               <div className="righthome">

@@ -59,6 +59,9 @@
     flex-direction: column;
     gap:20px;
 }
+a{
+    width:max-content;
+}
 
 @media (max-width:750px){
     #about{
@@ -73,3 +76,4 @@
         width:100%;
     }
 }
+

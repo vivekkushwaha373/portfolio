@@ -120,7 +120,7 @@ const About = () => {
                     <div className="Skills">
                         <h1>SKILLS</h1>
                         <ul>
-                            <li>MERN STACK WEB DEVELOPER</li>
+                            <li>MERN STACK | NEXT JS</li>
                             <li>DSA</li>
                             <li><span>CORE: </span>DBMS,COMPUTER NETWORKS,OS,OOPS</li>
                             <li><span>LANGUAGE:</span>C,C++,JAVASCRIPT</li>
@@ -131,6 +131,7 @@ const About = () => {
             <div className="rightabout">
                 <Card title='MERN STACK WEB DEVELOPER' image={mern}></Card>
                 <Card title='DSA' image={dsa}></Card>
+               
                 <Card title='GITHUB' image={git}></Card>
             </div>
         </div>

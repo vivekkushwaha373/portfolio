@@ -4,6 +4,10 @@ import './Project.css'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
+import aiinterv from '../../assets/AIinterv.png'
+import ghostnotes from '../../assets/GhostNotes.png'
+import bondsphere from '../../assets/BondSphere.png'
+
 gsap.registerPlugin(ScrollTrigger)
 
 const Project = () => {
@@ -31,13 +35,28 @@ const Project = () => {
     <div id='projects'>
           <h1 id='para'>MEGA PROJECTS</h1>
           <div className='slider'>
+          <Card image={aiinterv} title='AutoInterv'></Card>
+          <Card image={bondsphere } title='BondSphere'></Card>
+          <Card image={ghostnotes} title='GhostNotes'></Card>
+          </div>
+          
+
+          <h1 id='para'>MINI PROJECTS</h1>
+          <div className='slider'>
               
           
-          <Card title='INTERVIEW WITH AI'></Card>
-          <Card title='Social Media '></Card>
-          <Card title='LMS'></Card>
+          <Card title='Testimonials'></Card>
+          <Card title='Ecommerce'></Card>
+          <Card title='NoteSaver'></Card>
+          <Card title='Password Generator'></Card>
+          <Card title='Tic Tac Toe'></Card>
+          <Card title='Rock Paper Scissor'></Card>
+          <Card title='StudySync'></Card>
+          <Card title='Cards'></Card>
+          <Card title='AmazonBasic Css'></Card>
           
           </div>
+
     </div>
   )
 }

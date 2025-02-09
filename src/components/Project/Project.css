@@ -1,11 +1,13 @@
 #projects {
     width: 100%;
-    height: 100vh;
+    height: min-content;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
+    
+    
 }
 
 .slider {
@@ -14,9 +16,10 @@
     display: flex;
     align-items: center;
     overflow-x: scroll;
-    overflow-y: hidden;
+    justify-content: center;
     gap: 30px;
     scrollbar-width: none;
+    /* animation: scroll 5s linear infinite alternate; */
 }
 
 #para {
@@ -26,3 +29,16 @@
     color: transparent;
     text-align: center;
 }
+
+/*
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-(.slider.scrollWidth - .slider.clientWidth));
+        /* Adjust depending on card width */
+    }
+}
+
