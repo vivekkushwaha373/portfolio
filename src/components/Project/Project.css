@@ -28,19 +28,38 @@
     background-clip: text;
     color: transparent;
     text-align: center;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.righticonmini{
+    color: rgb(223, 121, 223);
+    
+}
+.righticonmega{
+    
+    color: rgb(223, 121, 223);
 }
 
-/*
+/* .minislider{
+    animation: scroll 5s linear infinite alternate;
+} */
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
     }
 
     100% {
-        transform: translateX(-(.slider.scrollWidth - .slider.clientWidth));
-        Adjust depending on card width 
+        transform: translateX(-50%);
+       
     }
 }
 
-*/
+@media (min-width:500px) {
+     .righticonmega{
+        display: none;
+     }
+}
+
 

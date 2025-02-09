@@ -16,6 +16,7 @@ import studysync from '../../assets/studysync.png'
 import testimonial from '../../assets/testimonial.png'
 import tictactoe from '../../assets/tictactoe.png'
 import amazon from '../../assets/amazon.png'
+import { FaArrowRight } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -42,7 +43,7 @@ const Project = () => {
     
   return (
     <div id='projects'>
-          <h1 id='para'>MEGA PROJECTS</h1>
+          <h1 id='para'>MEGA PROJECTS <FaArrowRight className='righticonmega' /></h1>
           <div className='slider'>
           <Card image={aiinterv} title='AutoInterv'></Card>
           <Card image={bondsphere } title='BondSphere'></Card>
@@ -50,8 +51,8 @@ const Project = () => {
           </div>
           
 
-          <h1 id='para'>MINI PROJECTS</h1>
-          <div className='slider'>
+          <h1 id='para'>MINI PROJECTS <FaArrowRight className='righticonmini' /></h1>
+          <div className='slider minislider'>
               
           
           <Card image={testimonial} title='Testimonials'></Card>
