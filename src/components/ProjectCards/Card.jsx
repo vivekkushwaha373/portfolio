@@ -38,7 +38,7 @@ const Card = ({ title, image}) => {
     if (title == 'Cards') {
       window.open('https://courscard.netlify.app/', '_blank');
     }
-    if (title == 'testimonial') {
+    if (title == 'Testimonials') {
       window.open('https://testimoncards.netlify.app/', '_blank');
     }
     if (title == 'AmazonBasic Css') {
