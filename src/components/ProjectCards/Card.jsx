@@ -12,7 +12,7 @@ const Card = ({ title, image}) => {
       window.open('https://autointerv.vercel.app/', '_blank');
     }
     if (title == 'BondSphere') {
-      window.open('https://ghost-notes-tau.vercel.app/', '_blank');
+      window.open('https://bond-spheree.vercel.app/', '_blank');
     }
     if (title == 'GhostNotes') {
       window.open('https://ghost-notes-tau.vercel.app/', '_blank');
