@@ -38,6 +38,9 @@ const Card = ({ title, image}) => {
     if (title == 'Cards') {
       window.open('https://courscard.netlify.app/', '_blank');
     }
+    if (title == 'testimonial') {
+      window.open('https://testimoncards.netlify.app/', '_blank');
+    }
     if (title == 'AmazonBasic Css') {
       window.open('https://amz0n1.netlify.app/', '_blank');
     }

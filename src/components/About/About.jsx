@@ -111,7 +111,7 @@ const About = () => {
                         <ul>
                             <li><span>DEGREE</span>: B.Tech</li>
                             <li><span>BRANCH</span>: COMPUTER SCIENCE & ENGINEERING</li>
-                            <li><span>CGPA</span>: 8.2</li>
+                            {/* <li><span>CGPA</span>: 8.2</li> */}
                             <li><span>LANGUAGE KNOWN</span>: HINDI,ENGLISH</li>
 
                         </ul>

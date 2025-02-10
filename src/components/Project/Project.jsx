@@ -56,7 +56,6 @@ const Project = () => {
               
           
           <Card image={testimonial} title='Testimonials'></Card>
-          <Card image={ecommerse} title='Ecommerce'></Card>
           <Card image={notesaver} title='NoteSaver'></Card>
           <Card image={password} title='Password Generator'></Card>
           <Card image={tictactoe} title='Tic Tac Toe'></Card>
@@ -64,6 +63,7 @@ const Project = () => {
           <Card image={studysync} title='StudySync'></Card>
           <Card image={coursecards} title='Cards'></Card>
           <Card image={amazon} title='AmazonBasic Css'></Card>
+          <Card image={ecommerse} title='Ecommerce'></Card>
           
           </div>
 
