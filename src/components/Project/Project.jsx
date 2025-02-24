@@ -45,9 +45,9 @@ const Project = () => {
     <div id='projects'>
           <h1 id='para'>MEGA PROJECTS <FaArrowRight className='righticonmega' /></h1>
           <div className='slider'>
+          <Card image={ghostnotes} title='GhostNotes'></Card>
           <Card image={aiinterv} title='AutoInterv'></Card>
           <Card image={bondsphere } title='BondSphere'></Card>
-          <Card image={ghostnotes} title='GhostNotes'></Card>
           </div>
           
 
