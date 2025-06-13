@@ -47,12 +47,16 @@ const Card = ({ title, image}) => {
   }
 
   return (
+     
     <div className='card' onClick={()=>redirect()}>
-          <h1>{title}</h1>
+      <h1>{title}</h1>
           <div className='hoverprojectcard' >
               <img src={image}  alt="" />
-          </div>
+        </div>
+
+
     </div>
+      
   )
 }
  

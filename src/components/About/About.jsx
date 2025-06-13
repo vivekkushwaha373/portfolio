@@ -111,6 +111,7 @@ const About = () => {
                         <ul>
                             <li><span>DEGREE</span>: B.Tech</li>
                             <li><span>BRANCH</span>: COMPUTER SCIENCE & ENGINEERING</li>
+                            <li><span>COLLEDGE</span>: JAWAHARLAL NEHRU UNIVERSITY</li>
                             {/* <li><span>CGPA</span>: 8.2</li> */}
                             <li><span>LANGUAGE KNOWN</span>: HINDI,ENGLISH</li>
 
@@ -120,10 +121,12 @@ const About = () => {
                     <div className="Skills">
                         <h1>SKILLS</h1>
                         <ul>
-                            <li>MERN STACK | NEXT JS</li>
-                            <li>DSA</li>
-                            <li><span>CORE: </span>DBMS,COMPUTER NETWORKS,OS,OOPS</li>
-                            <li><span>LANGUAGE:</span>C,C++,JAVASCRIPT</li>
+                            <li><span>Languages: </span>SQL, C,Python, C++, JavaScript, TypeScript, HTML, CSS</li>
+                            <li><span>Developer Tools: </span>Git, GitHub, VS Code, Postman</li>
+                            <li><span>Frameworks: </span>Express.js, Tailwind, NEXT.js, React.js, Django</li>
+                            <li><span>Databases: </span> MongoDB, MySQL, Redis</li>
+                            <li><span>DevOps & Cloud: </span>CI/CD (GitHub Actions), Docker, Kubernetes, AWS (IAM, EC2, S3, CloudFront, Lambda)</li>
+                            <li><span>Core: </span>DBMS,COMPUTER NETWORKS,OS,OOPS</li>
                         </ul>
                     </div>
                 </div>

@@ -42,7 +42,7 @@ const Home = () => {
                       <div className="line2">Vivek Kushwaha</div>
                       <div className="line3">
                           <TypingEffect
-                              text={['WEB DEVELOPER', 'MERN|NEXT DEVELOPER', 'SOFTWARE DEVELOPER']}
+                              text={['Full Stack DEVELOPER', 'MERN|NEXT DEVELOPER', 'Proficient in DSA', 'SOFTWARE DEVELOPER']}
                               speed={100}
                               eraseSpeed={50}
                               eraseDelay={1000}
