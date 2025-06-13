@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import man from '../../assets/man.png'
+import man from '../../assets/man.jpg'
 import TypingEffect from 'react-typing-effect'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -57,7 +57,7 @@ const Home = () => {
                   </div>
               </div>
               <div className="righthome">
-                  <img src={man} alt="" />
+                  <img src={man} alt="" style={{borderRadius:"90%"}} />
               </div>
           </div>
     </div>

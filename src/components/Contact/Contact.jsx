@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Contact.css'
-import con from '../../assets/contact.png'
+import con from '../../assets/contact.jpg'
 import { useForm, ValidationError } from '@formspree/react';
 import toast from 'react-hot-toast';
 
@@ -33,8 +33,8 @@ const Contact = () => {
     };
   return (
     <div id='contact'>
-          <div className="leftcontact">
-              <img src={con} alt="" />
+          <div className="leftcontact" style={{ marginTop:"5%" }}>
+              <img src={con} style={{ width: "70%", height: "auto", borderRadius:"20px"}} alt="" />
           </div>
           <div className="rightcontact">
               <form id='form' onSubmit={onSubmit}>
