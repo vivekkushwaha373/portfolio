@@ -7,15 +7,7 @@ import { ScrollTrigger } from 'gsap/all'
 import aiinterv from '../../assets/autointerv.png'
 import ghostnotes from '../../assets/GhostNotes.png'
 import bondsphere from '../../assets/BondSphere.png'
-import coursecards from '../../assets/coursecards.png'
-import ecommerse from '../../assets/ecommerse.png'
-import notesaver from '../../assets/notesaver.png'
-import password from '../../assets/password.png'
-import rockpaperscissor from '../../assets/roackpaperscissor.png'
-import studysync from '../../assets/studysync.png'
-import testimonial from '../../assets/testimonial.png'
-import tictactoe from '../../assets/tictactoe.png'
-import amazon from '../../assets/amazon.png'
+import lovable from '../../assets/lovable.png'
 import { FaArrowRight } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger)
@@ -42,31 +34,30 @@ const Project = () => {
         )
     
   return (
-    <div id='projects'>
-          <h1 id='para'>MEGA PROJECTS <FaArrowRight className='righticonmega' /></h1>
+    <div id='projects' className="projects-container">
+          <h1 id='para' className="section-title text-gradient">FEATURED PROJECTS <FaArrowRight className='righticonmega' /></h1>
           <div className='slider'>
-          <Card image={ghostnotes} title='GhostNotes'></Card>
-          <Card image={aiinterv} title='AutoInterv'></Card>
-          <Card image={bondsphere } title='BondSphere'></Card>
+            <Card 
+              image={lovable} 
+              title='Lovable Clone' 
+              description="Architected a microservices-based Code Generation platform automating full-stack web app generation. Features Node.js & Redis reverse proxy routing 10,000+ subdomains, and Spring Cloud Gateway with <15ms overhead."
+            />
+            <Card 
+              image={bondsphere} 
+              title='BondSphere'
+              description="Built a full-stack social media platform featuring real-time posts, comments, and chat using Socket.IO. Leveraged Cloudinary for media, boosting page speed by 30% and reducing load times by 50%."
+            />
+            <Card 
+              image={ghostnotes} 
+              title='GhostNotes'
+              description="Created Anonymous message sending platform using unique links to protect 100% user identity. Introduced JWT Authentication, OTP-based Email Verification. Achieved 30+ active users at present."
+            />
+            <Card 
+              image={aiinterv} 
+              title='AutoInterv'
+              description="Developed AI-powered interview assistant platform that offers personalized interview experience. Executed chatbot support with NLP capabilities. Optimized performance by 30% using Node.js clustering and React router-based loading."
+            />
           </div>
-          
-
-          <h1 id='para'>MINI PROJECTS <FaArrowRight className='righticonmini' /></h1>
-          <div className='slider minislider'>
-              
-          
-          <Card image={testimonial} title='Testimonials'></Card>
-          <Card image={notesaver} title='NoteSaver'></Card>
-          <Card image={password} title='Password Generator'></Card>
-          <Card image={tictactoe} title='Tic Tac Toe'></Card>
-          <Card image={rockpaperscissor} title='Rock Paper Scissor'></Card>
-          <Card image={studysync} title='StudySync'></Card>
-          <Card image={coursecards} title='Cards'></Card>
-          <Card image={amazon} title='AmazonBasic Css'></Card>
-          <Card image={ecommerse} title='Ecommerce'></Card>
-          
-          </div>
-
     </div>
   )
 }

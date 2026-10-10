@@ -29,6 +29,7 @@ const Nav = () => {
               <ul className='desktopmenu'>
                   <Link to='home' activeClass='active' spy={true} smooth={true} duration={500}><li>Home</li></Link>
                   <Link to='about' activeClass='active' spy={true} smooth={true} duration={500}><li>About</li></Link>
+                  <Link to='experience' activeClass='active' spy={true} smooth={true} duration={500}><li>Experience</li></Link>
                   <Link to='projects' activeClass='active' spy={true} smooth={true} duration={500}><li>Projects</li></Link> 
                   <Link to='contact' activeClass='active' spy={true} smooth={true} duration={500}><li>Contact</li></Link>
                         
@@ -42,10 +43,11 @@ const Nav = () => {
                   <div className="ham ham3"></div>
               </div>
               <ul className='mobilemenu' ref={mobile}>
-                  <Link to='home' activeClass='active' spy={true} smooth={true} duration={500}><li>Home</li></Link>
-                  <Link to='about' activeClass='active' spy={true} smooth={true} duration={500}><li>About</li></Link>
-                  <Link to='project' activeClass='active' spy={true} smooth={true} duration={500}><li>Projects</li></Link>
-                  <Link to='contact' activeClass='active' spy={true} smooth={true} duration={500}><li>Contact</li></Link>
+                  <Link to='home' activeClass='active' spy={true} smooth={true} duration={500} onClick={()=>mobile.current.classList.remove('activemobile')}><li>Home</li></Link>
+                  <Link to='about' activeClass='active' spy={true} smooth={true} duration={500} onClick={()=>mobile.current.classList.remove('activemobile')}><li>About</li></Link>
+                  <Link to='experience' activeClass='active' spy={true} smooth={true} duration={500} onClick={()=>mobile.current.classList.remove('activemobile')}><li>Experience</li></Link>
+                  <Link to='projects' activeClass='active' spy={true} smooth={true} duration={500} onClick={()=>mobile.current.classList.remove('activemobile')}><li>Projects</li></Link>
+                  <Link to='contact' activeClass='active' spy={true} smooth={true} duration={500} onClick={()=>mobile.current.classList.remove('activemobile')}><li>Contact</li></Link>
 
               </ul> 
     </nav>
