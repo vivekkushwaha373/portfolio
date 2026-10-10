@@ -41,10 +41,12 @@ nav ul{
 
 nav h1{
     font-size:40px;
-    font-weight:600;
-   background: linear-gradient(to right, rgb(16, 228, 239),white);
-   background-clip: text;
-   color:transparent;
+    font-weight:800;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, #f97316, #f43f5e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
 }
 .ham{
     width:40px;

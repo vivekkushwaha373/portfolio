@@ -6,17 +6,17 @@ import Project from "./components/Project/Project"
 import Experience from "./components/Experience/Experience"
 
 function App() {
-
-
   return (
-    <>
+    <div className="min-h-screen">
       <Nav></Nav>
-      <Home></Home>
-      <About></About>
-      <Experience></Experience>
-      <Project></Project>
-      <Contact></Contact>
-    </>
+      <main>
+        <Home></Home>
+        <About></About>
+        <Experience></Experience>
+        <Project></Project>
+        <Contact></Contact>
+      </main>
+    </div>
   )
 }
 

@@ -76,7 +76,7 @@
     overflow-y: auto;
     max-height: 180px;
     scrollbar-width: thin;
-    scrollbar-color: var(--accent) transparent;
+    scrollbar-color: #4b5563 transparent;
 }
 
 @media (max-width: 500px) {
