@@ -14,7 +14,8 @@ const experiences = [
                 title: 'Marketing Automation Platform',
                 points: [
                     'Proposed 40+ agentic workflows and orchestrator agents using Mastra, CopilotKit, and AG-UI.',
-                    'Integrated MCP for keyword research and automated AI-generated social content publishing using Postiz.',
+                    'Integrated MCP for keyword research, and used Firecrawl and ScrapeCreators for automated research on 12+ competitors and social media data collection.',
+                    'Automated AI-generated social content publishing using Postiz.',
                 ],
             },
             {
@@ -22,6 +23,7 @@ const experiences = [
                 points: [
                     'Developed 10+ accounting modules including invoices, bills, journals, and banking workflows with ACID-compliant transactions in Node.js and React.',
                     'Deployed report builders for 15+ financial and inventory reports using Puck Builder for real businesses.',
+                    'Collaborated with a team of 3 developers to design, develop, and deliver ERP features.',
                 ],
             },
         ],

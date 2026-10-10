@@ -1,6 +1,7 @@
 import { useState } from 'react'
+import { createPortal } from 'react-dom'
 import { Link } from 'react-scroll'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import { FaBars, FaTimes, FaFileAlt } from 'react-icons/fa'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
@@ -8,6 +9,7 @@ const navItems = ['Home', 'About', 'Experience', 'Projects', 'Contact']
 
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const [isResumeOpen, setIsResumeOpen] = useState(false)
 
     useGSAP(() => {
         gsap.from('.site-nav', {
@@ -45,9 +47,14 @@ const Nav = () => {
                     ))}
                 </div>
 
-                <Link to="contact" spy={true} smooth={true} duration={500} offset={-92} className="hidden cursor-pointer rounded-full bg-ink px-5 py-3 text-sm font-bold text-white shadow-glow transition hover:bg-cobalt lg:block">
-                    Let&apos;s Connect
-                </Link>
+                <div className="hidden items-center gap-4 lg:flex">
+                    <button onClick={() => setIsResumeOpen(true)} className="flex items-center gap-2 rounded-full border border-ink/10 bg-white px-5 py-3 text-sm font-bold text-ink transition hover:border-cobalt hover:text-cobalt">
+                        <FaFileAlt /> Resume
+                    </button>
+                    <Link to="contact" spy={true} smooth={true} duration={500} offset={-92} className="cursor-pointer rounded-full bg-ink px-5 py-3 text-sm font-bold text-white shadow-glow transition hover:bg-cobalt">
+                        Let&apos;s Connect
+                    </Link>
+                </div>
 
                 <button
                     type="button"
@@ -79,6 +86,28 @@ const Nav = () => {
                         ))}
                     </div>
                 </div>
+            )}
+
+            {isResumeOpen && createPortal(
+                <div className="fixed inset-0 z-[99999] flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm" style={{ top: 0, left: 0, right: 0, bottom: 0 }}>
+                    <div className="relative flex h-[90vh] w-full max-w-5xl flex-col overflow-hidden rounded-xl bg-white shadow-2xl">
+                        <div className="flex items-center justify-between border-b border-ink/10 bg-paper px-6 py-4">
+                            <h3 className="text-xl font-bold text-ink">Resume Preview</h3>
+                            <div className="flex gap-4">
+                                <a href="/vivek_resume.pdf" download="Vivek_Kushwaha_Resume.pdf" className="rounded bg-cobalt px-4 py-2 text-sm font-bold text-white transition hover:bg-ink">
+                                    Download
+                                </a>
+                                <button onClick={() => setIsResumeOpen(false)} className="text-2xl text-ink/70 transition hover:text-ink">
+                                    <FaTimes />
+                                </button>
+                            </div>
+                        </div>
+                        <div className="h-full w-full flex-1 bg-gray-100">
+                            <iframe src="/vivek_resume.pdf" className="h-full w-full border-none" title="Resume PDF"></iframe>
+                        </div>
+                    </div>
+                </div>,
+                document.body
             )}
         </header>
     )

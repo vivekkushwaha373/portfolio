@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
@@ -37,15 +37,18 @@ const profileSections = [
 
 const techStack = [
     ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg', 'Java'],
+    ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg', 'JavaScript'],
     ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg', 'Spring Boot'],
     ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg', 'React'],
     ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg', 'Node.js'],
+    ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg', 'Kubernetes'],
+    ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg', 'Docker'],
     ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg', 'AWS'],
     ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg', 'Kafka'],
-    ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg', 'Docker'],
     ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg', 'MongoDB'],
     ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg', 'MySQL'],
     ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg', 'Redis'],
+    ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg', 'Nginx'],
 ]
 
 const About = () => {
@@ -79,6 +82,9 @@ const About = () => {
                             </a>
                             <a href="https://linkedin.com/in/vivekkushwaha373" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-white px-5 py-3 text-sm font-bold text-ink transition hover:border-cobalt hover:text-cobalt">
                                 <FaLinkedin /> LinkedIn
+                            </a>
+                            <a href="mailto:vivekkushwaha734@gmail.com" className="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-white px-5 py-3 text-sm font-bold text-ink transition hover:border-clay hover:text-clay">
+                                <FaEnvelope /> Email
                             </a>
                         </div>
 
