@@ -96,7 +96,7 @@
 }
 .hire-btn{
     padding: 16px 36px;
-    background: linear-gradient(135deg, #f97316, #f43f5e);
+    background: linear-gradient(135deg, var(--accent), var(--accent-cyan));
     color: white;
     border: none;
     margin-top: 50px;
@@ -105,14 +105,14 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 25px rgba(249, 115, 22, 0.3);
+    box-shadow: 0 10px 25px var(--accent-glow);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .hire-btn:hover{
     transform: translateY(-4px);
-    box-shadow: 0 15px 30px rgba(244, 63, 94, 0.4);
+    box-shadow: 0 15px 30px rgba(6, 182, 212, 0.4);
 }
 
 @media (max-width: 750px){

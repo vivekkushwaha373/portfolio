@@ -40,22 +40,41 @@ const Project = () => {
             <Card 
               image={lovable} 
               title='Lovable Clone' 
-              description="Architected a microservices-based Code Generation platform automating full-stack web app generation. Features Node.js & Redis reverse proxy routing 10,000+ subdomains, and Spring Cloud Gateway with <15ms overhead."
+              points={[
+                "Architected a microservices-based Code Generation platform that automates full-stack web application generation using LLMs, mirroring the functionality of industry leaders like Lovable/v0.",
+                "Built a custom Node.js & Redis reverse proxy integrated with a Kubernetes NGINX Ingress Controller, dynamically routing 10,000+ subdomains for live app previews via rapid Redis lookups.",
+                "Secured and routed backend communication using Spring Cloud Gateway, Eureka, and Config Server, validating JWTs across 6 microservices with <15ms overhead.",
+                "Integrated LLM tool calling, reducing context tokens by 50% and improving latency by 50%.",
+                "Decoupled storage operations with Kafka for asynchronous, non-blocking file persistence to MinIO.",
+                "Containerized 6 services via Jib to Docker Hub, deployed on GKE with GitHub Actions CI/CD."
+              ]}
             />
             <Card 
               image={bondsphere} 
               title='BondSphere'
-              description="Built a full-stack social media platform featuring real-time posts, comments, and chat using Socket.IO. Leveraged Cloudinary for media, boosting page speed by 30% and reducing load times by 50%."
+              points={[
+                "Built a social media platform for users to interact via posts and real-time chats.",
+                "Incorporated post creation, likes/dislikes, comments, follow/unfollow, real-time notifications, and chat using Socket.IO enabling seamless interaction with under 1s latency.",
+                "Leveraged Cloudinary, reducing media load time by 50% and boosting page speed by 30%."
+              ]}
             />
             <Card 
               image={ghostnotes} 
               title='GhostNotes'
-              description="Created Anonymous message sending platform using unique links to protect 100% user identity. Introduced JWT Authentication, OTP-based Email Verification. Achieved 30+ active users at present."
+              points={[
+                "Created Anonymous message sending platform using unique links to protect 100% user identity.",
+                "Introduced JWT Authentication, OTP-based Email Verification.",
+                "Achieved 30+ active users at present."
+              ]}
             />
             <Card 
               image={aiinterv} 
               title='AutoInterv'
-              description="Developed AI-powered interview assistant platform that offers personalized interview experience. Executed chatbot support with NLP capabilities. Optimized performance by 30% using Node.js clustering and React router-based loading."
+              points={[
+                "Developed AI-powered interview assistant platform that offers personalized interview experience.",
+                "Executed chatbot support with natural language processing capabilities.",
+                "Optimized performance by 30% using Node.js clustering and React router-based loading."
+              ]}
             />
           </div>
     </div>

@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
-  --bg-primary: #050505;
-  --bg-secondary: #121212;
-  --text-primary: #ffffff;
+  --bg-primary: #09090b; /* Deep midnight */
+  --bg-secondary: #18181b;
+  --text-primary: #f8fafc;
   --text-secondary: #a1a1aa;
-  --accent: #f97316;
-  --accent-glow: rgba(249, 115, 22, 0.4);
-  --glass-bg: rgba(18, 18, 18, 0.6);
-  --glass-border: rgba(255, 255, 255, 0.08);
+  --accent: #8b5cf6; /* Electric Violet */
+  --accent-cyan: #06b6d4; /* Electric Cyan */
+  --accent-glow: rgba(139, 92, 246, 0.4);
+  --glass-bg: rgba(24, 24, 27, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.05);
 }
 
 * {
@@ -38,7 +39,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #f97316, #eab308, #f43f5e);
+  background: linear-gradient(135deg, var(--accent), var(--accent-cyan));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

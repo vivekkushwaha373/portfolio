@@ -1,7 +1,7 @@
 import React from 'react'
 import './Card.css'
 
-const Card = ({ title, image, description }) => {
+const Card = ({ title, image, points }) => {
   
   const redirect = () => {
     if (title === 'GITHUB') {
@@ -28,7 +28,13 @@ const Card = ({ title, image, description }) => {
       </div>
       <div className="card-content">
         <h1>{title}</h1>
-        {description && <p className="card-description">{description}</p>}
+        {points && (
+          <ul className="card-description-list">
+            {points.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   )
