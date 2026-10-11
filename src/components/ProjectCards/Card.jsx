@@ -1,16 +1,17 @@
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6'
 
 const projectLinks = {
-    'Lovable Clone': 'https://github.com/vivekkushwaha373/lovable-clone',
+    'Lovable Clone': 'https://github.com/vivekkushwaha373/distributed-lovable-project',
+    'Distributed Lovable': 'https://github.com/vivekkushwaha373/distributed-lovable-project',
     AutoInterv: 'https://autointerv.vercel.app/',
     BondSphere: 'https://bond-spheree.vercel.app/',
     GhostNotes: 'https://ghost-notes-tau.vercel.app/',
     GITHUB: 'https://github.com/vivekkushwaha373',
 }
 
-const Card = ({ title, image, points }) => {
+const Card = ({ title, image, points, link }) => {
     const redirect = () => {
-        const url = projectLinks[title]
+        const url = link || projectLinks[title]
 
         if (url) {
             window.open(url, '_blank')

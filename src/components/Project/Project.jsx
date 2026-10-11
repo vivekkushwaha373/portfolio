@@ -13,6 +13,7 @@ const projects = [
     {
         image: lovable,
         title: 'Lovable Clone',
+        link: 'https://github.com/vivekkushwaha373/distributed-lovable-project',
         points: [
             'Architected a microservices-based Code Generation platform that automates full-stack web application generation using LLMs, mirroring the functionality of industry leaders like Lovable/v0.',
             'Built a custom Node.js & Redis reverse proxy integrated with a Kubernetes NGINX Ingress Controller, dynamically routing 10,000+ subdomains for live app previews via rapid Redis lookups.',
@@ -25,6 +26,7 @@ const projects = [
     {
         image: bondsphere,
         title: 'BondSphere',
+        link: 'https://bond-spheree.vercel.app/',
         points: [
             'Built a social media platform for users to interact via posts and real-time chats.',
             'Incorporated post creation, likes/dislikes, comments, follow/unfollow, real-time notifications, and chat using Socket.IO enabling seamless interaction with under 1s latency.',
@@ -34,6 +36,7 @@ const projects = [
     {
         image: ghostnotes,
         title: 'GhostNotes',
+        link: 'https://ghost-notes-tau.vercel.app/',
         points: [
             'Created Anonymous message sending platform using unique links to protect 100% user identity.',
             'Introduced JWT Authentication, OTP-based Email Verification.',
@@ -43,6 +46,7 @@ const projects = [
     {
         image: aiinterv,
         title: 'AutoInterv',
+        link: 'https://autointerv.vercel.app/',
         points: [
             'Developed AI-powered interview assistant platform that offers personalized interview experience.',
             'Executed chatbot support with natural language processing capabilities.',
